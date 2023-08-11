@@ -56,3 +56,8 @@ function handleSubmission(event) {
 
     document.getElementById("output").innerText = `Your character name is ${result.charName}, ${result.charAge} years old, ${result.charPersonality} personality, ${result.charStrength} body strength and wears a ${result.charColor} t-shirt.`
 }
+
+window.addEventListener("load", function () {
+    const form = document.getElementById("calculator");
+    form.addEventListener("submit", handleSubmission);
+});
