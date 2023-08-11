@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Character Builder</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <h1>Character Builder</h1>
+    <h2>Welcome to Character Builder</h2>
+    <div>
+      <form id="calculator">
+        <div>
+          <label for="input_name">Character Name:</label>
+          <input id="input_name" type="text" />
+        </div>
+
+        <div>
+          <label for="input_age">Character Age:</label>
+          <input id="input_age" type="text" />
+        </div>
+
+        <div>
+          <label for="input_personality">Character Personality:</label>
+          <select id="input_personality">
+            <option value="1">Aggressive</option>
+            <option value="2">Calm</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="input_strength">Character Strength:</label>
+          <input
+            type="range"
+            id="input_strength"
+            name="strength"
+            min="0"
+            max="2"
+          />
+        </div>
+
+        <div>
+          <label for="color">Character T-Shirt Color:</label>
+          <input id="color" type="color" />
+        </div>
+
+        <button type="submit" class="btn">Create My Character!</button>
+      </form>
+    </div>
+
+    <h2>Results</h2>
+    <p id="output"></p>
+  </body>
+</html>
