@@ -1,5 +1,6 @@
 // Business Logic
 function charBuilder(charInfo) {
+    console.log(charInfo)
 
     const character = {
         charName: charInfo.name,
@@ -16,10 +17,10 @@ function charBuilder(charInfo) {
         character.charPersonality = 'Calm'
     }
 
-    if (charInfo.strength === 0) {
+    if (charInfo.strength === '0') {
         character.charStrength = 'Weak';
     }
-    else if (charInfo.strength === 1) {
+    else if (charInfo.strength === '1') {
         character.charStrength = 'Normal';
     }
     else {
